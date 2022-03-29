@@ -334,7 +334,7 @@ private:
     bool distanceof(char* addr, char* addr_stub)
     {
         std::ptrdiff_t diff = addr_stub >= addr ? addr_stub - addr : addr - addr_stub;
-        if((sizeof(addr) > 4) && (((diff >> 31) - 1) > 0))
+        if((sizeof(addr) > 4) && (((diff >> 31) - 1) > 0)))
         {
             return true;
         }
